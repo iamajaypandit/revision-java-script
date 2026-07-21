@@ -80,3 +80,31 @@ if(str === rev){
 checkPalindrome("madam");
 checkPalindrome("hello");
 checkPalindrome("rabina");
+//JS Reverse
+//Given a number, you task is to reverse its digits.
+// If the reversed number contains 0s in the beginning, you must remove them as well.
+// function JsReverse(num) {
+// let n= num;
+// let rev =0;
+// while(n>0){
+//     let last_digit=n%10;
+//     rev=rev*10+last_digit;
+//     n=Math.floor(n/10);
+// }
+// return rev;
+// }
+// console.log(JsReverse(1234));
+// console.log(JsReverse(9876));
+//Sum of Digits
+//Complete the function SumofDigits() that takes an integer N as a parameter and
+//  returns the sum of its digits.
+function SumofDigits(n){
+let sum =0;
+while(n>0){
+    let last_digit=n%10;
+    sum= sum+last_digit;
+    n=Math.floor(n/10);
+}
+return sum;
+}
+console.log(SumofDigits(15264));
