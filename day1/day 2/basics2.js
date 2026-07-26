@@ -108,3 +108,63 @@ while(n>0){
 return sum;
 }
 console.log(SumofDigits(15264));
+
+
+//Index of Element
+//You are given an integer array Arr of size N and a number X. 
+// You need to print all the indexes of the given X in the array, else print -1.
+
+//Note : You have to give output in 1-based indexing.
+
+//Input Format:
+
+//The first line of input contains N and X representing the number of elements 
+// and the number whose indexes is to be given respectively.
+
+//The second line of input contains N space separated integers, representing elements of the array Arr.
+
+//Output Format:
+
+//Print the indexes of number X in the array Arr, else print -1.
+
+//Example 1:
+
+//Input
+
+//5 1
+//2 1 3 1 1
+//Output:
+
+//2 4 5
+//Explanation:
+
+//1 is present at index 2, 4 and 5.
+function indexOfElement(N, X, arr) {
+  // write code and print here
+  let found = false;
+  for(let i =0; i<arr.length; i++){
+    if(arr[i]  == X){
+      console.log(i+1);
+      found =true;
+    }
+   }
+   if(found == false){
+    console.log(-1);
+  }
+}
+
+//Longest String
+//You want to implement a function that takes an array of strings 
+// and returns the longest string in the array.
+function longestString(arr) {
+  
+  let ansIdx = 0;
+for(let i = 0; i< arr.length; i++){
+     let ansLen = arr[ansIdx].length;
+     let currLen = arr[i].length;
+     if(currLen > ansLen){
+      ansIdx = i;
+     }
+ }
+   return arr[ansIdx];
+}
