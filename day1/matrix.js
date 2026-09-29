@@ -1,4 +1,4 @@
-// printing daigonal matrixs
+//printing daigonal matrixs
 
 // let mat = [
 //     [1, 2, 3, 4],
@@ -66,19 +66,19 @@
 //     [8, 9, 10, 11]
 // ]
 
-    // for (let i = 0; i < mat.length; i++) {
-    //     let result = "";
-    //     if (i % 2 == 0) {
-    //         for (let j = 0; j < mat[0].length; j++) {
-    //             result += mat[i][j] + " ";
-    //         }
-    //     } else {
-    //         for (let j = mat[0].length - 1; j >= 0; j--) {
-    //             result += mat[i][j] + " ";
-    //         }
-    //     }
-    //     console.log(result);
-    // }
+//     for (let i = 0; i < mat.length; i++) {
+//         let result = "";
+//         if (i % 2 == 0) {
+//             for (let j = 0; j < mat[0].length; j++) {
+//                 result += mat[i][j] + " ";
+//             }
+//         } else {
+//             for (let j = mat[0].length - 1; j >= 0; j--) {
+//                 result += mat[i][j] + " ";
+//             }
+//         }
+//         console.log(result);
+//     }
     
 // transpose matricx 
 // let mat = [
