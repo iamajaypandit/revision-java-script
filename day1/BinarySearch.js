@@ -166,3 +166,51 @@ const countOccurences = (arr, target) => {
 }
 
  console.log(countOccurences([1, 2, 2, 2, 2, 3, 4],2));
+
+
+ function firstAndLast(arr, target) {
+    let first = -1;
+    let last = -1;
+
+    // Find first occurrence
+    let left = 0;
+    let right = arr.length - 1;
+
+    while (left <= right) {
+        let mid = Math.floor((left + right) / 2);
+
+        if (arr[mid] == target) {
+            first = mid;
+            right = mid - 1;   // go left
+        } 
+        else if (arr[mid] < target) {
+            left = mid + 1;
+        } 
+        else {
+            right = mid - 1;
+        }
+    }
+
+    // Find last occurrence if 
+    left = 0;
+    right = arr.length - 1;
+
+    while (left <= right) {
+        let mid = Math.floor((left + right) / 2);
+
+        if (arr[mid] == target) {
+            last = mid;
+            left = mid + 1;    // go right
+        } 
+        else if (arr[mid] < target) {
+            left = mid + 1;
+        } 
+        else {
+            right = mid - 1;
+        }
+    }
+
+    console.log([first, last]);
+}
+
+firstAndLast([2, 4, 4, 4, 5, 6], 4);
